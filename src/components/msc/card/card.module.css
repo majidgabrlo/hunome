@@ -1,0 +1,33 @@
+@media (min-width: 600px) {
+  .card div {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 203ms;
+  }
+
+  .card:hover > div {
+    position: absolute;
+    height: 200%;
+    display: block;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .card:hover img {
+    height: 60%;
+    object-fit: cover;
+  }
+
+  .card:hover > div > div {
+    display: flex;
+    height: 35%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card .field{
+      display: flex;
+      row-gap: 2px;
+  }
+}
